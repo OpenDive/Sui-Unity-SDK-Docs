@@ -55,19 +55,19 @@
   ],
   "navigation": [
     {
-      "group": "Sui SDKs",
-      "pages": [
-        "sui/sui-unity",
-        "Swift SDK",
-        "Android SDK"
-      ]
-    },
-    {
       "group": "Get Started",
       "pages": [
         "introduction",
         "quickstart",
         "development"
+      ]
+    },
+    {
+      "group": "Sui SDKs",
+      "pages": [
+        "sui/sui-unity",
+        "Swift SDK",
+        "Android SDK"
       ]
     },
     {
