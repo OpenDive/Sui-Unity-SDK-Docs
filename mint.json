@@ -33,6 +33,11 @@
   ],
   "anchors": [
     {
+      "name": "Twitter / X",
+      "icon": "twitter",
+      "url": "https://x.com/OpenDiveHQ"
+    },
+    {
       "name": "Documentation",
       "icon": "book-open-cover",
       "url": "https://mintlify.com/docs"
