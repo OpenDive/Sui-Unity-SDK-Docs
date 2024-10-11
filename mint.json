@@ -57,7 +57,7 @@
     {
       "group": "Sui SDKs",
       "pages": [
-        "Unity SDK",
+        "sui/sui-unity",
         "Swift SDK",
         "Android SDK"
       ]
