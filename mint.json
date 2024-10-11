@@ -57,13 +57,9 @@
     {
       "group": "Sui SDKs",
       "pages": [
-        "quickstart",
-        {
-          "group": "Nested Reference Pages",
-          "pages": [
-            "nested-reference-page"
-          ]
-        }
+        "Unity SDK",
+        "Swift SDK",
+        "Android SDK"
       ]
     },
     {
