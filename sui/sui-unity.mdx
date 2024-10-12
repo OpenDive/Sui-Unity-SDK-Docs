@@ -8,6 +8,55 @@ This means that games built with our SDK can directly craft custom Move calls wi
 
 Our SDK fully supports mobile, desktop and WebGL application built with the Unity game engine.
 
+## About the Project
+**Sui-Unity-SDK** is a C# Unity SDK designed to provide Unity developers with a seamless and efficient way to interact with the Sui Blockchain. Our aim is to lower the barrier for Unity developers, enabling them to leverage and integrate Sui's vast and versatile ecosystem into their games without having to delve deep into the complexities of the ecosystem.
+
+## Motivation
+With the rise of Web3 technologies being leveraged for games of all genres, it is very vital that developers have access to the necessary tools to simplify the process of leveraging such technologies. While Sui has an incredible suite of capabilities, there was a clear need for a C# Unity SDK that aligns with the idiomatic practices of the engine and language, along with the expectations of such development tools.
+
+## Our Vision
+We envision a tool that not only provides the flexibility and customization for experienced Sui developers, but also provides an easy entry point for novice and beginner developers who aren't as familiar with the various complex concepts that come with Web3 development. Our ultimate goal is to foster innovation by providing Unity developers with the right tools to integrate Sui's capabilities into their applications effortlessly.
+
+## Features
+- [x] Create new accounts using the ED25519 Key Standard.
+- [x] Simulate and submit transaction.
+- [x] Transfer Sui.
+- [x] Air drop Sui tokens.
+- [x] Merge and Split coins.
+- [x] Publish modules.
+- [x] Transfer objects.
+- [x] Execute move calls.
+- [x] Retrieving objects, transactions, checkpoints, coins, and events.
+- [x] Local Transaction Building.
+- [x] Local, custom, dev, test, and main net compatibility.
+- [x] Comprehensive Unit and Integration Test coverage.
+
+### Make Account Transfer Quickly and Easily! ###
+
+With how easy the library is to use, Sui-Unity-SDK gives you the power to quickly setup a Sui account and be able to transfer coins in only a few lines of code:
+```c#
+// Initialize Accounts.
+Account alice = new Account();
+Account bob = new Account();
+
+// Initialize Client and Transaction Block
+SuiClient client = new SuiClient(Constants.LocalnetConnection);
+TransactionBlock tx_block = new TransactionBlock();
+
+// Call Transfer Objects
+tx_block.AddTransferObjectsTx(new SuiTransactionArgument[] { tx_block.gas }, bob.SuiAddress());
+
+// Call SignAndExecuteTransactionBlockAsync
+RpcResult<TransactionBlockResponse> published_tx_block = await client.SignAndExecuteTransactionBlockAsync
+(
+    tx_block,
+    alice
+);
+
+// Return the TransactionBlockResponse
+return published_tx_block.Result;
+```
+
 <Info>
   **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding.
 </Info>
