@@ -54,7 +54,8 @@
       "group": "Sui SDKs",
       "pages": [
         "sui/sui-unity",
-        "sui/sui-swift"
+        "sui/sui-swift",
+        "sui/sui-android"
       ]
     },
     {
